@@ -10,4 +10,8 @@ node {
    stage('echo_msg'){
       echo "checkout"	     
    }
+   stage('echo_msg'){
+	emailext body: 'Hello Boyyy', subject: 'Testng email', to: 'ganesh.wankhede@siemens.com'
+
+	}
 }
